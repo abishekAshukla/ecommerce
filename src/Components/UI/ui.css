@@ -1,0 +1,19 @@
+@media (max-width: 885px) {
+  .nav-ul {
+    display: none;
+  }
+
+  .icons {
+    border: none;
+  }
+}
+
+@media (max-width: 660px) {
+  .search-box {
+    display: none;
+  }
+
+  .search-icon {
+    display: block;
+  }
+}
