@@ -9,7 +9,7 @@ import "./ui.css";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-around items-center h-[52px]">
+    <div className="flex justify-around items-center h-[52px] fixed top-0 w-[100%] bg-white border-b-[1px] border-[rgba(0,0,0,.2)]">
       <div className="flex">
         <img
           src="https://images.bewakoof.com/web/ic-desktop-normal-bwkf-logo.svg"
@@ -59,7 +59,7 @@ const Navbar = () => {
           />
         </div>
 
-        <div className="icons flex bg-white border-l-2 border-[#8f8b8b] ml-10 px-2 items-center h-[25px]">
+        <div className="icons flex bg-white border-l-2 border-[rgba(0,0,0,.2)] ml-10 px-2 items-center h-[25px]">
           <div className="search-icon text-[23px] hidden text-gray-600">
             <AiOutlineSearch />
           </div>

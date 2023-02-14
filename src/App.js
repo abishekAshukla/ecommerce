@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Navbar from "./Components/UI/Navbar";
+import Login from "./Components/Login Page/Login";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -73,6 +74,7 @@ function App() {
   return (
     <div>
       <Navbar/>
+      <Login/>
 
       {/* <h1 className="text-3xl font-bold underline text-blue-500">Hello world!</h1>
       <h3> Register User </h3>
