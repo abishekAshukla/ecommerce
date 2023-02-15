@@ -1,6 +1,9 @@
 import { useState } from "react";
 import Navbar from "./Components/UI/Navbar";
+import Home from "./Components/Home page/Home";
 import Login from "./Components/Login Page/Login";
+import OtpScreen from "./Components/UI/OtpScreen";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -73,10 +76,15 @@ function App() {
   };
   return (
     <div>
-      <Navbar/>
-      <Login/>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/login" element={<Login />} />
+          <Route exact path="/otp" element={<OtpScreen />} />
+        </Routes>
 
-      {/* <h1 className="text-3xl font-bold underline text-blue-500">Hello world!</h1>
+        {/* <h1 className="text-3xl font-bold underline text-blue-500">Hello world!</h1>
       <h3> Register User </h3>
       <input
         placeholder="Email..."
@@ -116,6 +124,7 @@ function App() {
       <button onClick={signInWithGoogle}>Sign In With Google</button>
 
       <hr /> */}
+      </Router>
     </div>
   );
 }
