@@ -11,11 +11,12 @@ const Navbar = () => {
   return (
     <div className="flex justify-around items-center h-[52px] fixed top-0 w-[100%] bg-white border-b-[1px] border-[rgba(0,0,0,.2)]">
       <div className="flex">
-        <img
+        {/* <img
           src="https://images.bewakoof.com/web/ic-desktop-normal-bwkf-logo.svg"
           alt="logo"
           className="h-[20px] w-[147px]"
-        />
+        /> */}
+        <div className="h-[20px] w-[147px] text-3xl font-extrabold bg-white flex justify-center items-center">Coverly</div>
         <ul className="nav-ul flex ml-[35px]">
           <li
             className="nav-li"
